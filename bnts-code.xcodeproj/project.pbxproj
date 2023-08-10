@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		832931C12A84EF3B0002B308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931C02A84EF3B0002B308 /* AppDelegate.swift */; };
 		832931C32A84EF3B0002B308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931C22A84EF3B0002B308 /* SceneDelegate.swift */; };
-		832931C52A84EF3B0002B308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931C42A84EF3B0002B308 /* ViewController.swift */; };
-		832931C82A84EF3B0002B308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832931C62A84EF3B0002B308 /* Main.storyboard */; };
+		832931C52A84EF3B0002B308 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931C42A84EF3B0002B308 /* PhotosViewController.swift */; };
 		832931CA2A84EF3C0002B308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832931C92A84EF3C0002B308 /* Assets.xcassets */; };
 		832931CD2A84EF3C0002B308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832931CB2A84EF3C0002B308 /* LaunchScreen.storyboard */; };
 		832931D82A84EF3C0002B308 /* bnts_codeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931D72A84EF3C0002B308 /* bnts_codeTests.swift */; };
 		832931F52A84F05E0002B308 /* CoreSDK in Resources */ = {isa = PBXBuildFile; fileRef = 832931F42A84F05E0002B308 /* CoreSDK */; };
 		832931F82A84F0AC0002B308 /* CoreSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 832931F72A84F0AC0002B308 /* CoreSDK */; };
+		832931FC2A84FF230002B308 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931FB2A84FF230002B308 /* PhotosView.swift */; };
+		832931FE2A8509C40002B308 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832931FD2A8509C40002B308 /* PhotoCardView.swift */; };
+		832932012A8509F40002B308 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 832932002A8509F40002B308 /* Kingfisher */; };
+		832932032A85100E0002B308 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832932022A85100E0002B308 /* PhotosViewModel.swift */; };
+		832932062A8510BD0002B308 /* UIView-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832932052A8510BD0002B308 /* UIView-Ext.swift */; };
+		832932082A85115F0002B308 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832932072A85115F0002B308 /* AppCoordinator.swift */; };
+		8329320C2A8514F00002B308 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329320B2A8514F00002B308 /* PhotosService.swift */; };
+		8329320F2A8517380002B308 /* Logger-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329320E2A8517380002B308 /* Logger-Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +39,20 @@
 		832931BD2A84EF3B0002B308 /* bnts-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bnts-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		832931C02A84EF3B0002B308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		832931C22A84EF3B0002B308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		832931C42A84EF3B0002B308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		832931C72A84EF3B0002B308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		832931C42A84EF3B0002B308 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		832931C92A84EF3C0002B308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832931CC2A84EF3C0002B308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832931CE2A84EF3C0002B308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		832931D32A84EF3C0002B308 /* bnts-codeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bnts-codeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		832931D72A84EF3C0002B308 /* bnts_codeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bnts_codeTests.swift; sourceTree = "<group>"; };
 		832931F42A84F05E0002B308 /* CoreSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CoreSDK; sourceTree = "<group>"; };
+		832931FB2A84FF230002B308 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		832931FD2A8509C40002B308 /* PhotoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
+		832932022A85100E0002B308 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		832932052A8510BD0002B308 /* UIView-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Ext.swift"; sourceTree = "<group>"; };
+		832932072A85115F0002B308 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8329320B2A8514F00002B308 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
+		8329320E2A8517380002B308 /* Logger-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger-Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832932012A8509F40002B308 /* Kingfisher in Frameworks */,
 				832931F82A84F0AC0002B308 /* CoreSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,10 +98,11 @@
 		832931BF2A84EF3B0002B308 /* bnts-code */ = {
 			isa = PBXGroup;
 			children = (
+				832932042A8510AC0002B308 /* Extensitions */,
+				832931F92A84FEFA0002B308 /* Scenes */,
 				832931C02A84EF3B0002B308 /* AppDelegate.swift */,
 				832931C22A84EF3B0002B308 /* SceneDelegate.swift */,
-				832931C42A84EF3B0002B308 /* ViewController.swift */,
-				832931C62A84EF3B0002B308 /* Main.storyboard */,
+				832932072A85115F0002B308 /* AppCoordinator.swift */,
 				832931C92A84EF3C0002B308 /* Assets.xcassets */,
 				832931CB2A84EF3C0002B308 /* LaunchScreen.storyboard */,
 				832931CE2A84EF3C0002B308 /* Info.plist */,
@@ -118,6 +133,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		832931F92A84FEFA0002B308 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				832931FA2A84FF140002B308 /* Photos */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		832931FA2A84FF140002B308 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				832932092A8514BD0002B308 /* View */,
+				8329320A2A8514C40002B308 /* ViewModel */,
+				8329320D2A8514F40002B308 /* Service */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		832932042A8510AC0002B308 /* Extensitions */ = {
+			isa = PBXGroup;
+			children = (
+				832932052A8510BD0002B308 /* UIView-Ext.swift */,
+				8329320E2A8517380002B308 /* Logger-Ext.swift */,
+			);
+			path = Extensitions;
+			sourceTree = "<group>";
+		};
+		832932092A8514BD0002B308 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				832931C42A84EF3B0002B308 /* PhotosViewController.swift */,
+				832931FB2A84FF230002B308 /* PhotosView.swift */,
+				832931FD2A8509C40002B308 /* PhotoCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8329320A2A8514C40002B308 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				832932022A85100E0002B308 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8329320D2A8514F40002B308 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8329320B2A8514F00002B308 /* PhotosService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +204,7 @@
 			name = "bnts-code";
 			packageProductDependencies = (
 				832931F72A84F0AC0002B308 /* CoreSDK */,
+				832932002A8509F40002B308 /* Kingfisher */,
 			);
 			productName = "bnts-code";
 			productReference = 832931BD2A84EF3B0002B308 /* bnts-code.app */;
@@ -187,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 832931B42A84EF3B0002B308;
+			packageReferences = (
+				832931FF2A8509F30002B308 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 832931BE2A84EF3B0002B308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,7 +277,6 @@
 				832931CD2A84EF3C0002B308 /* LaunchScreen.storyboard in Resources */,
 				832931CA2A84EF3C0002B308 /* Assets.xcassets in Resources */,
 				832931F52A84F05E0002B308 /* CoreSDK in Resources */,
-				832931C82A84EF3B0002B308 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +294,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				832931C52A84EF3B0002B308 /* ViewController.swift in Sources */,
+				832931C52A84EF3B0002B308 /* PhotosViewController.swift in Sources */,
+				8329320F2A8517380002B308 /* Logger-Ext.swift in Sources */,
+				8329320C2A8514F00002B308 /* PhotosService.swift in Sources */,
 				832931C12A84EF3B0002B308 /* AppDelegate.swift in Sources */,
+				832932062A8510BD0002B308 /* UIView-Ext.swift in Sources */,
+				832931FE2A8509C40002B308 /* PhotoCardView.swift in Sources */,
+				832932082A85115F0002B308 /* AppCoordinator.swift in Sources */,
 				832931C32A84EF3B0002B308 /* SceneDelegate.swift in Sources */,
+				832932032A85100E0002B308 /* PhotosViewModel.swift in Sources */,
+				832931FC2A84FF230002B308 /* PhotosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +326,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		832931C62A84EF3B0002B308 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				832931C72A84EF3B0002B308 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		832931CB2A84EF3C0002B308 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -393,9 +463,8 @@
 				INFOPLIST_FILE = "bnts-code/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,9 +472,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appfex.bnts-code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -421,9 +493,8 @@
 				INFOPLIST_FILE = "bnts-code/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,9 +502,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appfex.bnts-code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -509,10 +583,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		832931FF2A8509F30002B308 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		832931F72A84F0AC0002B308 /* CoreSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreSDK;
+		};
+		832932002A8509F40002B308 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832931FF2A8509F30002B308 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
