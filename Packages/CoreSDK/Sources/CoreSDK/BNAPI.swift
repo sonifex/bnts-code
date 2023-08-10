@@ -41,7 +41,8 @@ extension BNAPI: TargetType {
     
     public var task: Task {
         switch self {
-            
+        case .photos:
+            return .requestParameters(parameters: ["per_page": 20], encoding: URLEncoding.default)
         default:
             return .requestPlain
         }

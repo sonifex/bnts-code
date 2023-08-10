@@ -8,9 +8,9 @@
 import Foundation
 
 public final class BNUserSocial: Decodable {
-    let instagramUsername: String
-    let portfolioUrl: String
-    let twitterUsername: String
+    let instagramUsername: String?
+    let portfolioUrl: String?
+    let twitterUsername: String?
     let paypalEmail: String?
 }
 
@@ -27,15 +27,15 @@ public final class BNUser: Decodable {
     public let name: String
     public let firstName: String
     public let lastName: String?
-    public let twitterUsername: String
-    public let portfolioUrl: URL
-    public let bio: String
+    public let twitterUsername: String?
+    public let bio: String?
     public let profileImage: BNUserProfileImage
-    public let instagramUsername: String
+    public let instagramUsername: String?
     public let totalCollections: Int
     public let totalLikes: Int
     public let totalPhotos: Int
     public let acceptedTos: Bool
     public let forHire: Bool
-    public let social: BNUserSocial
+    public let social: BNUserSocial?
+    public let location: String?
 }

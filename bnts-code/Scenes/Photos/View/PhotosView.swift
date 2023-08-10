@@ -22,7 +22,7 @@ struct PhotosView<ViewModel: PhotosViewModeling & ObservableObject>: View {
                     .progressViewStyle(.automatic)
                     .tint(.white)
                     .foregroundColor(.white)
-                    
+                
             }
             .ignoresSafeArea()
     }
@@ -31,12 +31,21 @@ struct PhotosView<ViewModel: PhotosViewModeling & ObservableObject>: View {
         TabView {
             ForEach(viewModel.photos) { photo in
                 PhotoCardView(url: photo.imageURL,
-                              title: photo.title,
+                              title: photo.description ?? "",
                               liked: photo.isLiked,
                               likeCount: photo.totalLikes,
                               isLikeLoading: viewModel.loadingPhotoLikeID == photo.id) {
+                    
+                    // Disabled due to auth restriction
+                    let generator = UINotificationFeedbackGenerator()
+                    generator.notificationOccurred(.error)
+                    
                     viewModel.photoLikeDidTap(photo: photo)
                 }
+                              .onTapGesture {
+                                  UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
+                                  viewModel.photoDidTap(photo: photo)
+                              }
             }
         }
         .ignoresSafeArea()

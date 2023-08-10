@@ -22,9 +22,10 @@ final class AppCoordinator: AppCoordinating {
     }
     
     func start() {
-        window.rootViewController = PhotosViewController(viewModel: PhotosViewModel())
+        let coordinator = PhotosCoordinator(navigationControler: UINavigationController())
+        coordinator.start()
+        window.rootViewController = coordinator.navigationController
         window.makeKeyAndVisible()
         UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: nil)
     }
-    
 }

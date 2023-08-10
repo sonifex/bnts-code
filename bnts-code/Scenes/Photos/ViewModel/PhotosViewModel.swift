@@ -12,11 +12,11 @@ import Combine
 protocol PhotosViewModeling {
     var isLoading: Bool { get }
     var loadingPhotoLikeID: String? { get }
-    
     var photos: [PhotoViewModel] { get }
     
     func viewDidLoad()
     
+    func photoDidTap(photo: PhotoViewModel)
     func photoLikeDidTap(photo: PhotoViewModel)
 }
 
@@ -29,6 +29,7 @@ final class PhotosViewModel: PhotosViewModeling & ObservableObject {
     
     private let service: PhotosServicing
     
+    var coordinator: PhotosCoordinating?
     private lazy var cancellables = Set<AnyCancellable>()
     private lazy var logger = Logger(for: type(of: self))
     
@@ -40,16 +41,20 @@ final class PhotosViewModel: PhotosViewModeling & ObservableObject {
         fetchPhotos()
     }
     
+    func photoDidTap(photo: PhotoViewModel) {
+        coordinator?.photoDidTap(photo: photo)
+    }
+    
     func photoLikeDidTap(photo: PhotoViewModel) {
         
-        // Seems like the endpoint for like/unlike only available for oauth2 authorization.
-        // Since this is just a public auth, we need to ignore it for now.
+        // NOTE: - Seems like the endpoint for like/unlike only available for oauth2 authorization.
+        // NOTE: - Since this is just a public auth, we need to ignore it for now.
         
-//        if photo.isLiked {
-//            unlikePhoto(photo: photo)
-//        } else {
-//            likePhoto(photo: photo)
-//        }
+        //        if photo.isLiked {
+        //            unlikePhoto(photo: photo)
+        //        } else {
+        //            likePhoto(photo: photo)
+        //        }
     }
 }
 
@@ -112,5 +117,3 @@ private extension PhotosViewModel {
         photos[index] = photo
     }
 }
-
-

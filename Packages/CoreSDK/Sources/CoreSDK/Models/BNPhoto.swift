@@ -23,6 +23,14 @@ public final class BNPhotoLinks: Decodable {
     public let downloadLocation: URL
 }
 
+public final class BNPhotoSponsor: Decodable {
+    public let id: String
+    public let username: String
+    public let name: String
+    public let bio: String
+    public let localition: String
+}
+
 public final class BNPhoto: Decodable {
     public let id: String
     public let slug: String
@@ -36,5 +44,8 @@ public final class BNPhoto: Decodable {
     public let links: BNPhotoLinks
     public let likes: Int
     public let likedByUser: Bool
+    
+    public let sponsor: BNPhotoSponsor?
+    public let user: BNUser
     
 }
