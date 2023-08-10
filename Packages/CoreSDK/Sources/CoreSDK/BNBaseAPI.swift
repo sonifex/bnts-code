@@ -81,6 +81,8 @@ public class BNBaseAPI {
                     
                     let filteredResponse = try response.filterSuccessfulStatusCodes()
                     let json = try filteredResponse.map(type.self, using: decoder)
+                    
+                    debugPrint(json)
                     completion(.success(json))
                     
                 } catch {

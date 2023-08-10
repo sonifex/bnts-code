@@ -23,6 +23,7 @@
 		832932082A85115F0002B308 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832932072A85115F0002B308 /* AppCoordinator.swift */; };
 		8329320C2A8514F00002B308 /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329320B2A8514F00002B308 /* PhotosService.swift */; };
 		8329320F2A8517380002B308 /* Logger-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329320E2A8517380002B308 /* Logger-Ext.swift */; };
+		832932112A8537A90002B308 /* PhotoInfoBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832932102A8537A90002B308 /* PhotoInfoBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		832932072A85115F0002B308 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8329320B2A8514F00002B308 /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
 		8329320E2A8517380002B308 /* Logger-Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger-Ext.swift"; sourceTree = "<group>"; };
+		832932102A8537A90002B308 /* PhotoInfoBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				832931C42A84EF3B0002B308 /* PhotosViewController.swift */,
 				832931FB2A84FF230002B308 /* PhotosView.swift */,
 				832931FD2A8509C40002B308 /* PhotoCardView.swift */,
+				832932102A8537A90002B308 /* PhotoInfoBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				832931FE2A8509C40002B308 /* PhotoCardView.swift in Sources */,
 				832932082A85115F0002B308 /* AppCoordinator.swift in Sources */,
 				832931C32A84EF3B0002B308 /* SceneDelegate.swift in Sources */,
+				832932112A8537A90002B308 /* PhotoInfoBarView.swift in Sources */,
 				832932032A85100E0002B308 /* PhotosViewModel.swift in Sources */,
 				832931FC2A84FF230002B308 /* PhotosView.swift in Sources */,
 			);

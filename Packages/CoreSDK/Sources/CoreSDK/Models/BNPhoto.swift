@@ -35,5 +35,6 @@ public final class BNPhoto: Decodable {
     public let urls: BNPhotoUrls
     public let links: BNPhotoLinks
     public let likes: Int
+    public let likedByUser: Bool
     
 }

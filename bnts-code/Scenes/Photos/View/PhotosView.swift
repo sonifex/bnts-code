@@ -30,7 +30,13 @@ struct PhotosView<ViewModel: PhotosViewModeling & ObservableObject>: View {
     var body: some View {
         TabView {
             ForEach(viewModel.photos) { photo in
-                PhotoCardView(url: photo.imageURL, title: photo.title)
+                PhotoCardView(url: photo.imageURL,
+                              title: photo.title,
+                              liked: photo.isLiked,
+                              likeCount: photo.totalLikes,
+                              isLikeLoading: viewModel.loadingPhotoLikeID == photo.id) {
+                    viewModel.photoLikeDidTap(photo: photo)
+                }
             }
         }
         .ignoresSafeArea()

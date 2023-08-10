@@ -8,8 +8,9 @@ import Foundation
 import Moya
 
 public enum BNAPI {
-    
     case photos
+    case likePhoto(id: String)
+    case unLikePhoto(id: String)
 }
 
 extension BNAPI: TargetType {
@@ -21,11 +22,21 @@ extension BNAPI: TargetType {
         switch self {
         case .photos:
             return "photos"
+        case .likePhoto(let id), .unLikePhoto(let id):
+            return "photos/\(id)/like"
         }
     }
     
     public var method: Moya.Method {
-        return .get
+        switch self {
+        case .photos:
+            return .get
+        case .likePhoto:
+            return .post
+        case .unLikePhoto:
+            return .delete
+        }
+        
     }
     
     public var task: Task {
