@@ -21,20 +21,8 @@ public final class CoreSDK {
 
     public static let shared = CoreSDK()
     
-    
-    // API
+    // API Types
     public lazy var photosAPI: BNPhotosAPIType = {
         return BNPhotosAPI()
     }()
-    
-    // Utils
-    
-//    public func setToken(token: String) {
-//        self.token = token
-//    }
-//
-//    public func removeToken() {
-//        self.token = nil
-//    }
-//
 }
