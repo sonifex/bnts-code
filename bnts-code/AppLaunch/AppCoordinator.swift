@@ -22,7 +22,8 @@ final class AppCoordinator: AppCoordinating {
     }
     
     func start() {
-        let coordinator = PhotosCoordinator(navigationControler: UINavigationController())
+        navigationController = UINavigationController()
+        let coordinator = PhotosCoordinator(navigationControler: navigationController!)
         coordinator.start()
         window.rootViewController = coordinator.navigationController
         window.makeKeyAndVisible()
